@@ -1,1 +1,1 @@
-# parcial_corte2
+Juan Felipe Salazar Trujillo ID:408955
