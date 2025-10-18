@@ -1,2 +1,3 @@
 Juan Felipe Salazar Trujillo ID:408955
+
 Elegí una arquitectura en capas (modelos, repositorios, servicios, controladores) para separar responsabilidades y facilitar la mantenibilidad y la prueba de unidades. Los modelos definen la estructura de datos; el repositorio (in-memory por ahora) abstrae el acceso y permite cambiar la persistencia sin tocar la lógica de negocio; los servicios contienen la lógica y validaciones reutilizables; y los controladores exponen la API.asi mejorando la faciliad de las pruebas que se pueden realizar ademas de facilitar el escalado de la aplicacion.
