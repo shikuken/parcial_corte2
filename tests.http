@@ -1,0 +1,34 @@
+### Variables globales
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+### Crear una nueva tarea
+POST {{baseUrl}}/tasks
+Content-Type: {{contentType}}
+
+{
+    "title": "realizar casa 1",
+    "description": "hacer una casa de 1 pisos",
+    "dueDate": "2025-12-31"
+}
+
+### Actualizar estado de una tarea a COMPLETED
+# Reemplaza {taskId} con el ID de la tarea que quieres actualizar
+PATCH {{baseUrl}}/tasks/1/status
+Content-Type: {{contentType}}
+
+{
+    "status": "DONE"
+}
+
+### Eliminar una tarea
+# Reemplaza {taskId} con el ID de la tarea que quieres eliminar
+DELETE {{baseUrl}}/tasks/1
+
+### Prueba de error - Intentar actualizar una tarea que no existe
+PATCH {{baseUrl}}/tasks/999/status
+Content-Type: {{contentType}}
+
+{
+    "status": "COMPLETED"
+}
